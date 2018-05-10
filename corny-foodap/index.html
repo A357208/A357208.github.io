@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
+  <!-- Head -->
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="title">Corny Foodap</title>
   </head>
   <body>
-    <div id="header-locked">
-      <h1>Corny Foodap</h1>
+    <!-- Main content -->
+    <div id="header-sticky" class="header">
+      <h3>Corny Foodap •</h3>
+      <h4>Food • Fresh • Fast</h4>
+    </div>
+    <div id="header-locked" class="header">
+      <h1>Corny Foodap</h1><br/>
       <h2>Food • Fresh • Fast</h2>
+    </div>
+    <div id="quiz-wrapper" class="content">
+      <h2>What are you craving?</h2><br/>
+      <h5>Take the interactive quiz to find out.</h5>
+      <button id="quiz-button">Take the Quiz</button>
+    </div>
+    <div id="history-disp" class="content">
+      <h2 class="mrgn">Recently Wanted</h2><br/>
+      <h5 class="mrgn" id="hist-status">Loading...</h5>
+      <div id="hist-flex"></div>
     </div>
   </body>
 </html>
