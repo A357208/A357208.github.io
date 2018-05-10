@@ -1,11 +1,11 @@
-* {
-  font-family: site-main;
-  white-space: normal;
-}
-
 @font-face {
   font-family: site-main;
   src: url();
+}
+
+* {
+  font-family: sans-serif;
+  white-space: normal;
 }
 
 body {
