@@ -1,49 +1,32 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="title">What are you craving?</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-      }
-      #header-sticky {
-        height: 30px;
-        top: 0;
-        left: 0;
-        z-index: 9;
-        padding-top: 4px;
-        padding-left: 5px;
-      }
-      #quiz-body {
-        height: 100%;
-        -ms-transform: translate(0, 30px);
-        -webkit-transform: translate(0, 30px);
-        transform: translate(0, 30px);
-        margin-bottom: 30px;
-      }
-      #quiz-flex {
-        display: flex;
-        align-content: stretch;        
-      }
-      * {
-        border: 3px solid #ff0000;
-      }
-    </style>
   </head>
+
   <body>
     <div id="header-sticky">
       <h3>Corny Foodap •</h3>
       <h4>Food • Fresh • Fast</h4>
     </div>
     <div id="quiz-body">
-      <div id="quiz-flex">
-        <h6>Some text here</h6>
+      <div id="q-tmp-0" class="quiz-template">
+        <h4>Loading...</h4>
+      </div>
+      <div id="q-tmp-1" class="load-hidden quiz-template">
+        <button id="q-b-0"></button>
+        <button id="q-b-1"></button>
+        <button id="q-b-2"></button>
+        <button id="q-b-3"></button>
+      </div>
+      <div id="q-tmp-2" class="load-hidden quiz-template">
+        <h3 id="result">
+        </h3>
       </div>
     </div>
-    <script></script>
   </body>
+
 </html>
