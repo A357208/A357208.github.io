@@ -5,6 +5,68 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="title">What are you craving?</title>
+    <style>
+      * {
+        font-family: sans-serif;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        display: inline-block;
+        margin: 0;
+      }
+
+      body {
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      html {
+        height: 100%;
+      }
+
+      #header-sticky {
+        height: 30px;
+        width: 100%;
+        z-index: 1;
+        position: relative;
+        background-color: #19abdd;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, .4);
+        padding-top: 4px;
+        padding-left: 5px;
+      }
+
+      #quiz-body {
+        height: calc(100% - 30px);
+        display: flex;
+        z-index: 0;
+        align-content: stretch;
+        background-color: #1b99e7;
+      }
+
+      .load-hidden {
+        display: none;
+      }
+
+      .quiz-template {
+        height: 100%;
+        width: 100%;
+      }
+
+      #q-tmp-0 h4 {
+        display: block;
+      }
+
+      #q-tmp-0 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #q-tmp-1 {
+
+      }
+    </style>
   </head>
 
   <body>
