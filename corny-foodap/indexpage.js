@@ -3,7 +3,7 @@ document
 	.getElementById("quiz-button")
   .addEventListener("click",
   function(e){
-		//window.location.href = "/quiz.html";
+		window.location.href = "/quiz.html";
 	}
 );
 
