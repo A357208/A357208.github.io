@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   display: inline;
 }
-
+  
 .header {
   width: 100%;
   margin: 0;
@@ -83,6 +83,40 @@ h1, h2, h3, h4, h5, h6 {
 .mrgn {
   margin-left: 5px;
 }
+  
+.dis400 {
+  display: none;
+}
+
+@media screen and min-width: 400px {
+  .hid400 {
+    display: none;
+  }
+  .dis400 {
+    display: block;
+  }
+  h1 {
+    font-size: calc(2em + 25px);
+  }
+  h2 {
+    font-size: calc(1.5em + 25px);
+  }
+  h3 {
+    font-size: calc(1.17em + 25px);
+  }
+  h4 {
+    font-size: calc(1em + 25px);
+  }
+  h5 {
+    font-size: calc(.87em + 25px);
+  }
+  h6 {
+    font-size: calc(.67em + 25px);
+  }
+  #header-locked {
+    
+  }
+}
 
 #hist-flex {
   display: flex;
@@ -99,7 +133,7 @@ h1, h2, h3, h4, h5, h6 {
       <h4>Food • Fresh • Fast</h4>
     </div>
     <div id="header-locked" class="header">
-      <h1>Corny Foodap</h1><br/>
+      <h1>Corny Foodap</h1><br class="hid400"/>
       <h2>Food • Fresh • Fast</h2>
     </div>
     <div id="quiz-wrapper" class="content">
