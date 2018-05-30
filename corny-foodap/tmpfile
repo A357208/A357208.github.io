@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <!-- Head -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Corny Foodap</title>
+    <style>
+    @font-face {
+  font-family: site-main;
+  src: url();
+}
+* {
+  font-family: sans-serif;
+  white-space: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  display: inline;
+  font-weight: normal;
+}
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2.25em;
+}
+h3 {
+  font-size: 1.76em;
+}
+h4 {
+  font-size: 1.5em;
+}
+h5 {
+  font-size: 1.25em;
+}
+h6 {
+  font-size: 1em;
+}
+.head-text {
+  font-weight: bold;
+}
+.header {
+  width: 100%;
+  margin: 0;
+  background-color: #19abdd;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, .4);
+}
+#header-locked {
+  height: 200px;
+  z-index: 10;
+  position: relative;
+  text-align: center;
+  line-height: 200px;
+}
+.align-middle {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+#header-sticky {
+  height: 65px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  padding: 5px;
+  line-height: 65px;
+}
+#quiz-wrapper {
+  width: 100%;
+  height: 90px;
+  padding: 10px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, .4);
+  position: relative;
+  overflow: hidden;
+  background-color: #1b99e7;
+}
+#quiz-button {
+  position: absolute;
+  display: block;
+  width: 70px;
+  height: 70px;
+  top: 20px;
+  right: 40px;
+  border: none;
+  background-color: #ff8800;
+}
+#history-disp {
+  width: 100%;
+  min-height: 100px;
+  padding-top: 5px;
+  background-color: #50b5ff;
+}
+.mrgn {
+  margin: 5px;
+}
+
+#hist-flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+    </style>
+  </head>
+  <body>
+    <!-- Main content -->
+    <div id="header-locked" class="header">
+      <div>
+        <span class="align-middle">
+          <h1 class="head-text align-middle">Corny Foodap</h1><br/>
+          <h2 class="align-middle">Food • Fresh • Fast</h2>
+        </span>
+      </div>
+    </div>
+    <div id="header-sticky" class="header">
+      <span class="align-middle">
+        <h4 class="head-text">Corny Foodap</h4>
+      </span>
+    </div>
+    <div id="quiz-wrapper" class="content">
+      <h2 class="head-text">What are you craving?</h2><br/>
+      <h5>Take the interactive quiz to find out.</h5>
+      <button id="quiz-button">Take the Quiz</button>
+    </div>
+    <div id="history-disp" class="content">
+      <h2 class="head-text mrgn">Recently Wanted</h2><br/>
+      <h5 class="mrgn" id="hist-status">Loading...</h5>
+      <div id="hist-flex"></div>
+    </div>
+    <script>
+    // Set redirect button
+document
+	.getElementById("quiz-button")
+  .addEventListener("click",
+  function(e){
+		window.location.href = "/quiz.html";
+	}
+);
+
+var storage = window.localStorage;
+try{
+	storage.setItem("Xxx_MLGStorageTest_xxX", "Xxx_MLGStorageTest_xxX");
+  storage.removeItem("Xxx_MLGStorageTest_xxX");
+}catch(e){
+	document
+  	.getElementById("hist-status")
+    .innerHTML = "Error loading.";
+}
+
+var data = storage.getItem("HistoryData");
+if(!data){
+	document
+  	.getElementById("hist-status")
+    .innerHTML = "No recents found. Take the quiz to make something show up here!";
+}else{
+	var injdiv = document.getElementById("");
+  for(var i = 0; i < data.length; i++){
+    data[i] = parseInt(data[i]);
+    
+  }
+}
+
+    </script>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  </body>
+</html>
