@@ -73,7 +73,7 @@ h6 {
   line-height: 65px;
 }
 #about-us {
-  width: 40%;
+  width: 100px;
   height: 65px;
   text-align: center;
   font-size: 2em;
@@ -121,11 +121,17 @@ h6 {
   justify-content: space-around;
   align-items: center;
 }
+#alert {
+  display: none;
+  position: fixed;
+  margin: 0 auto;
+}
     </style>
   </head>
   <body>
     <!-- Main content -->
     <div id="alert">
+	    It was a school project.
     </div>
     <div id="header-locked" class="header">
       <div>
@@ -185,11 +191,20 @@ if(!data){
     
   }
 }
+	    
+var al = document.querySelector("#alert");
 
 document
   .querySeletor("#about-us")
   .addEventListener("click", function(){
-  	
+    al.style.display = "block";
+  });
+document
+  .querySelector("body")
+  .addEventListener("click", function(e){
+    if(e.target.id != al.id){
+      al.style.display = "none";
+    }
   });
     </script>
     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
