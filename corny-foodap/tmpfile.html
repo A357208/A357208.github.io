@@ -69,8 +69,21 @@ h6 {
   top: 0;
   left: 0;
   z-index: 9;
-  padding: 5px;
+  padding-left: 5px;
   line-height: 65px;
+}
+#about-us {
+  width: 40%;
+  height: 65px;
+  text-align: center;
+  font-size: 2em;
+  line-height: 65px;
+  position: absolute;
+  right: 0;
+  margin: 0;
+}
+#about-us:hover {
+  background-color: #0092c4;
 }
 #quiz-wrapper {
   width: 100%;
@@ -112,6 +125,8 @@ h6 {
   </head>
   <body>
     <!-- Main content -->
+    <div id="alert">
+    </div>
     <div id="header-locked" class="header">
       <div>
         <span class="align-middle">
@@ -122,9 +137,11 @@ h6 {
     </div>
     <div id="header-sticky" class="header">
       <span class="align-middle">
-        <h3 class="head-text">Corny Foodap</h4>
+        <h2 class="head-text">Corny Foodap</h2>
       </span>
-      <div></div>
+      <span id="about-us">
+        <span class="align-middle">About us</span>
+      </span>
     </div>
     <div id="quiz-wrapper" class="content">
       <h2 class="head-text">What are you craving?</h2><br/>
@@ -169,6 +186,11 @@ if(!data){
   }
 }
 
+document
+  .querySeletor("#about-us")
+  .addEventListener("click", function(){
+  	
+  });
     </script>
     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
   </body>
