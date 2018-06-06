@@ -87,7 +87,15 @@
     },
     "12": {
       "nameasset": 0,
+      "opts": [
+        "Dumpling",
+        "Fried Noodle",
+        "Noodle in soup",
+        "Fried Rice",
+        "White Rice",
+        "Soup",
+        "Sushi"
+      ]
     }
-    
   }
 }
