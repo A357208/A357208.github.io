@@ -1,0 +1,93 @@
+{
+  "stringassets": [
+    "What kind of that?"
+  ],
+  "brnch": [
+    {
+      "name": "Dietary Restrictions?",
+      "bytechange": false,
+      "opts": [
+        "Vegertarian",
+        "Vegan",
+        "Gluten-Friendly",
+        "None"
+      ]
+    },
+    {
+      "name": "Budget?",
+      "bytechange": false,
+      "opts": [
+        ">10$",
+        ">25$",
+        ">40$",
+        "40+$"
+      ]
+    },
+    {
+      "name": "Nationality?",
+      "bytechange": true,
+      "opts": [
+        "American / European",
+        "Asian"
+      ]
+    },
+    {
+      "name": "What time is it?",
+      "bytechange": true,
+      "opts": [
+        "Breakfast: Salty",
+        "Breakfast: Sweet",
+        "Lunch/Dinner",
+      ]
+    }
+  ],
+  "branch": {
+    "00": {
+      "nameasset": 0,
+      "opts": [
+        "fruit",
+        "crepes",
+        "pancakes",
+        "waffles"
+      ]
+    },
+    "10": {
+      "nameasset": 0,
+      "opts": [
+        "chinese buns",
+        "soup"
+      ]
+    },
+    "01": {
+      "nameasset": 0,
+      "opts": [
+        "english muffins",
+        "oatmeal",
+        "omelettes",
+        "eggs and Bacon"
+      ]
+    },
+    "11": {
+      "nameasset": 0,
+      "opts": [
+        "congee",
+        "soup",
+        "chinese buns"
+      ]
+    },
+    "02": {
+      "nameasset": 0,
+      "opts": [
+        "soup",
+        "salad",
+        "sandwich",
+        "burger",
+        "pasta"
+      ]
+    },
+    "12": {
+      "nameasset": 0,
+    }
+    
+  }
+}
