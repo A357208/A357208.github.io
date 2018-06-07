@@ -6,11 +6,11 @@ xhr.onreadystatechange = function(){
   }
 }
 
-xhr.open("data.json", "GET");
+xhr.open("quiz.json", "GET");
 xhr.send();
 
 function readyxhr(str){
-	var data = JSON.parse(str);
+  var data = JSON.parse(str);
   var button;
   var textId = "#";
   function mkFunc(iter){
